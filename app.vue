@@ -1,18 +1,13 @@
 <template>
-  <nav>
+  <nav class="border-b py-2">
     <ContentNavigation v-slot="{ navigation }">
-      <ul>
+      <ul class="flex w-full justify-center">
         <li v-for="link of navigation" :key="link._path">
-          <NuxtLink :to="link._path">{{ link.title }}</NuxtLink>
+          <NuxtLink :to="link._path" class="font-medium text-xl mx-2">{{ link.title }}</NuxtLink>
         </li>
       </ul>
     </ContentNavigation>
   </nav>
 
-  <div>
-    <ContentDoc v-slot="{ doc }">
-      <!-- <h1 class="">{{ doc.title }}</h1> -->
-      <ContentRenderer :value="doc" />
-    </ContentDoc>
-  </div>
+  <NuxtPage />
 </template>
