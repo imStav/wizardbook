@@ -11,7 +11,6 @@
     -->
     <ContentList path="/blog" v-slot="{ list }">
       <div v-for="article in list" :key="article._path" class="p-4 border rounded-lg dark:bg-indigo-900/90 dark:text-indigo-100">
-        <NuxtLink :to="article._path">
           <div class="flex flex-col">
             <h2 class="text-2xl font-semibold">{{ article.title }}</h2>
             
@@ -25,10 +24,11 @@
             </div>
             
             <p class="">{{ article.description }}</p>
-          </div>
 
-          <img v-if="article.img" :src="article.img" alt="" class="">
-        </NuxtLink>
+            <img v-if="article.img" :src="article.img" alt="" class="">
+            
+            <NuxtLink :to="article._path" class="self-end w-fit border-b border-transparent hover:border-current duration-200">Read more</NuxtLink>
+          </div>
       </div>
     </ContentList>
   </main>
