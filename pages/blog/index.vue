@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col 2xl:w-1/2 w-2/3 mx-auto my-12">
-    <h1 class="text-3xl font-bold dark:text-slate-50">Blog</h1>
+    <h1 class="text-5xl font-bold dark:text-slate-50">Blog</h1>
     <p class="opacity-70 dark:text-slate-50">Lorem ipsum dolor sit amet</p>
   </div>
 
@@ -12,7 +12,7 @@
       (./content/blog) and displays front-matter data (title, date...) 
     -->
     <ContentList path="/blog" v-slot="{ list }">
-      <div v-for="article in list" :key="article._path" class="p-4 border dark:border-slate-500/30 rounded-lg dark:bg-gradient-to-t dark:from-indigo-800/20 dark:text-slate-200 dark:hover:bg-gradient-to-t dark:hover:from-indigo-800/30 dark:hover:border-slate-500/50 duration-200">
+      <div v-for="article in list" :key="article._path" class="p-4 border dark:border-slate-500/30 rounded-lg dark:bg-gradient-to-t dark:from-indigo-800/20 dark:text-slate-200 dark:hover:bg-gradient-to-t dark:hover:from-indigo-800/30 dark:hover:border-slate-500/50 duration-200 h-fit">
           <div class="flex flex-col">
             <h2 class="text-2xl font-semibold">{{ article.title }}</h2>
             

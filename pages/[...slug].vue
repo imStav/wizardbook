@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col border w-2/4 xl:w-2/6 mx-auto my-24">
+    <div class="flex flex-col w-2/4 xl:w-2/6 mx-auto my-24">
       <div class="mb-8">
         <NuxtLink to="/blog">Go back</NuxtLink>
       </div>
