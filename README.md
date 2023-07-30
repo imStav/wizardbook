@@ -1,63 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Wizard Book
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dda1fadf-ba09-4d87-ab27-1935b5143cc9/deploy-status)](https://app.netlify.com/sites/tracking-rickandmorty/deploys)
 
-## Setup
+> **Wizard Book** is a web app that aims to help **novice developers**, providing a set of posts and resources about web /  **front-end** development
 
-Make sure to install the dependencies:
+## Technologies
 
-```bash
-# npm
-npm install
+* 🔭 Nuxt 3 (3.6.5)
+* ⚡ Nuxt Contet (2.7.1)
 
-# pnpm
-pnpm install
+*Find more information in the `package.json` file*
 
-# yarn
-yarn install
-```
+## Visit Wizard Book
 
-## Development Server
+The app is currently live @ [wizardbook.netlify.app](https://wizardbook.netlify.app/)
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+> **Warning** <br>
+> The app is curently available in **french** only for the moment
