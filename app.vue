@@ -1,12 +1,10 @@
 <template>
-  <nav class="sticky top-0 dark:bg-black/10 dark:text-white backdrop-blur-xl py-4 z-50">
-    <ContentNavigation v-slot="{ navigation }">
-      <ul class="flex w-full justify-center">
-        <li v-for="link of navigation" :key="link._path">
-          <NuxtLink :to="link._path" class="text-lg mx-2">{{ link.title }}</NuxtLink>
-        </li>
-      </ul>
-    </ContentNavigation>
+  <nav class="sticky top-0 w-full py-4 backdrop-blur-2xl z-50">
+    <div class="w-fit mx-auto">
+      <NuxtLink to="/" class="hover:text-white duration-200 border-b border-dotted">Accueil</NuxtLink>
+      <NuxtLink to="/blog" class="mx-4 hover:text-white duration-200 border-b border-dotted">Grimoire</NuxtLink>
+      <NuxtLink to="/resources" class="hover:text-white duration-200 border-b border-dotted">Runes</NuxtLink>
+    </div>
   </nav>
 
   <NuxtPage />
