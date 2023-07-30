@@ -5,4 +5,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss'
   ],
+  content: {
+    highlight: {
+      theme: 'material-theme-palenight',
+    },
+  },
 })

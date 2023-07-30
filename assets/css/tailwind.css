@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * @license
+ *
+ * Font Family: Bonny
+ * Designed by: Barbara Bigosinska
+ * URL: https://www.fontshare.com/fonts/bonny
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Bonny Variable(Variable font)
+ * Bonny Thin
+ * Bonny Light
+ * Bonny Regular
+ * Bonny Medium
+ * Bonny Bold
+ *
+*/
+
+@font-face {
+  font-family: 'Bonny-Variable';
+  src: url('../fonts/Bonny-Variable.woff2') format('woff2');
+       font-weight: 100 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-200 dark:bg-black dark:text-slate-300;
+    font-family: 'Satoshi-Variable';
+  }
+
+  h1,
+  h2 {
+    font-family: 'Bonny-Variable';
+  }
+}
