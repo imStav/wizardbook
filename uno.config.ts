@@ -3,8 +3,9 @@ import {
   defineConfig, 
   presetUno, 
   presetAttributify, 
+  presetIcons, 
   presetTypography, 
-  presetWebFonts 
+  presetWebFonts
 } from 'unocss'
 
 export default defineConfig({
@@ -12,6 +13,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
+    presetIcons(),
     presetTypography(),
     presetWebFonts({
       provider: 'fontshare',
