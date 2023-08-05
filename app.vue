@@ -17,7 +17,7 @@
         >
           Accueil
         </NuxtLink>
-        <div class="i-lucide-key ml-1"></div>
+        <div class="i-lucide-home ml-1 text-lg"></div>
       </div>
       
       <div 
@@ -33,7 +33,7 @@
         >
           Grimoire
         </NuxtLink>
-        <div class="i-lucide-book-marked ml-1 rotate-10"></div>
+        <div class="i-lucide-book-marked ml-1 text-lg"></div>
       </div>
 
       <div 
@@ -49,7 +49,7 @@
         >
           Runes
         </NuxtLink>
-        <div class="i-lucide-key ml-1"></div>
+        <div class="i-lucide-key ml-1 text-lg"></div>
       </div>
     </div>
   </nav>
