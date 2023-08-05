@@ -31,7 +31,7 @@
           <div 
             class="p-4 rounded-lg backdrop-blur-2xl"
             flex="~ col"
-            bg-gradient="to-t from-stone/10 to-blueGray/15"
+            bg-gradient="to-t from-stone/05 to-blueGray/10"
             font="sans"
           >
             <h2
@@ -66,11 +66,11 @@
               v-if="article.img" 
               :src="article.img" 
               alt="" 
-              class="rounded-lg my-4 w-full h-36 object-cover"
+              class="rounded-lg my-6 w-full h-36 object-cover"
             >
             
             <div
-              class="hover:text-white mt-4 w-fit" 
+              class="hover:text-white w-fit" 
               flex="~ self-end items-center"
             >
               <NuxtLink 
