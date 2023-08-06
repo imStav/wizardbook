@@ -1,7 +1,7 @@
 <template>
   <div class="2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
     <h1
-      text="5xl"
+      text="5xl white"
       font="bold display"
     >
       Wizard Book
@@ -30,7 +30,7 @@
 
   <div class="2xl:w-1/2 w-11/12 md:w-2/3 mx-auto mb-8">
     <h2
-      text="3xl"
+      text="3xl white"
       font="display semibold"
     >
       Centre de ressources
@@ -51,7 +51,7 @@
     >
       <h2 
         class="mb-3"
-        text="3xl"
+        text="3xl white"
         font="semibold display"
       >
         Le Grimoire
@@ -86,7 +86,7 @@
     >
       <h2 
         class="mb-3"
-        text="3xl"
+        text="3xl white"
         font="semibold display"
       >
         Les Runes
