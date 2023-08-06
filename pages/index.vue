@@ -66,8 +66,7 @@
       >
         <NuxtLink 
           to="/blog" 
-          class="hover:text-white"
-          text="blueGray"
+          class="text-blueGray hover:text-white"
           font="sans"
           decoration="none"
         >
@@ -101,8 +100,7 @@
       >
         <NuxtLink 
           to="/resources" 
-          class="hover:text-white"
-          text="blueGray"
+          class="text-blueGray hover:text-white"
           font="sans"
           decoration="none"
         >
