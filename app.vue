@@ -10,8 +10,7 @@
       >
         <NuxtLink 
           to="/" 
-          class="hover:text-white"
-          text="xl blueGray"
+          class="text-xl text-blueGray hover:text-white"
           font="sans"
           decoration="none"
         >
@@ -26,8 +25,7 @@
       >
         <NuxtLink 
           to="/blog" 
-          class="hover:text-white"
-          text="xl blueGray"
+          class="text-xl text-blueGray hover:text-white"
           font="sans"
           decoration="none"
         >
@@ -42,8 +40,7 @@
       >
         <NuxtLink 
           to="/resources" 
-          class="hover:text-white"
-          text="xl blueGray"
+          class="text-xl text-blueGray hover:text-white"
           font="sans"
           decoration="none"
         >

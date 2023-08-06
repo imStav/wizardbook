@@ -11,8 +11,7 @@
         <div class="i-lucide-arrow-left mr-2"></div>
         <NuxtLink 
           to="/blog" 
-          class="hover:text-white"
-          text="blueGray"
+          class="text-blueGray hover:text-white"
           decoration="none"
         >
           Retour
@@ -63,7 +62,9 @@
           >
         </div>
 
-        <ContentRenderer :value="doc" class="mt-10 prose" />
+        <div>
+          <ContentRenderer :value="doc" class="mt-10 prose" />
+        </div>
       </ContentDoc>
     </div>
 </template>

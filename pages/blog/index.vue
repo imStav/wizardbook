@@ -72,7 +72,7 @@
           >
             <NuxtLink 
             :to="article._path"
-            text="blueGray hover:white"
+            class="text-blueGray hover:text-white"
             decoration="none"
             >
               Lire la suite
