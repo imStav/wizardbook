@@ -1,57 +1,5 @@
 <template>
-  <nav class="hidden lg:block sticky top-0 w-full py-4 backdrop-blur-2xl z-50">
-    <div 
-      class="w-fit mx-auto"
-      flex="~"
-    >
-      <div 
-        class="hover:text-white" 
-        flex="~ row items-center"
-      >
-        <NuxtLink 
-          to="/" 
-          class="text-xl text-blueGray hover:text-white"
-          font="sans"
-          decoration="none"
-        >
-          Accueil
-        </NuxtLink>
-        <div class="i-lucide-home ml-1 text-lg"></div>
-      </div>
-      
-      <div 
-        class="hover:text-white mx-6" 
-        flex="~ row items-center"
-      >
-        <NuxtLink 
-          to="/blog" 
-          class="text-xl text-blueGray hover:text-white"
-          font="sans"
-          decoration="none"
-        >
-          Grimoire
-        </NuxtLink>
-        <div class="i-lucide-book-marked ml-1 text-lg"></div>
-      </div>
-
-      <div 
-        class="hover:text-white" 
-        flex="~ row items-center"
-      >
-        <NuxtLink 
-          to="/resources" 
-          class="text-xl text-blueGray hover:text-white"
-          font="sans"
-          decoration="none"
-        >
-          Runes
-        </NuxtLink>
-        <div class="i-lucide-key ml-1 text-lg"></div>
-      </div>
-    </div>
-  </nav>
-
-  <nav class="lg:hidden sticky top-0 w-full py-3 backdrop-blur-2xl z-50">
+  <nav class="sticky top-0 w-full py-3 backdrop-blur-2xl z-50">
     <div class="flex justify-between items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto">
       <div>
         <NuxtLink 
@@ -60,31 +8,33 @@
           font="display bold"
           decoration="none"
         >
-          W.
+          W<span class="text-xl">izarBook.</span>
         </NuxtLink>
       </div>
 
-      <div class="flex">
-        <div class="mr-4 p-2 rounded-full bg-bluegray/30 hover:bg-bluegray/40">
+      <div class="flex items-center">
+        <div class="flex items-center mr-4 hover:text-white">
           <NuxtLink 
           to="/blog" 
-          class="text-xl text-blueGray hover:text-white"
+          class="text-xl text-blueGray hover:text-white mr-1"
           font="display semibold"
           decoration="none"
           >
-          <div class="i-lucide-book-marked"></div>
+            Grimoire
           </NuxtLink>
+          <div class="i-lucide-book-marked"></div>
         </div>
         
-        <div class="p-2 rounded-full bg-bluegray/30">
+        <div class="flex items-center hover:text-white">
           <NuxtLink 
           to="/resources" 
-          class="text-xl text-blueGray hover:text-white"
+          class="text-xl text-blueGray hover:text-white mr-1"
           font="display semibold"
           decoration="none"
           >
-          <div class="i-lucide-key"></div>
+            Runes
           </NuxtLink>
+          <div class="i-lucide-key"></div>
         </div>
       </div>
     </div>
