@@ -14,11 +14,7 @@
     </p>
   </div>
 
-  <!-- text-5xl font-display font-bold dark:text-slate-50 -mb-2 -->
-
-  <!-- <div class="fixed bottom-0 right-0 h-48 w-[3000px] bg-gradient-to-l from-indigo-900/50 to-fuchsia-500/50 -z-10 blur-3xl"></div> -->
-
-  <main class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-3 gap-8 2xl:w-1/2 w-11/12 mx-auto mb-24">
+  <main class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-3 2xl:w-1/2 w-full gap-8 mx-auto mb-24">
     <!-- 
       Generates a card for each article contained in the 'blog' subfolder 
       (./content/blog) and displays front-matter data (title, date...) 
@@ -26,9 +22,9 @@
     <ContentList path="/blog" v-slot="{ list }">
       <div v-for="article in list" :key="article._path">
         <div 
-          class="p-4 rounded-lg backdrop-blur-2xl"
+          class="p-4 backdrop-blur-2xl"
           flex="~ col"
-          bg-gradient="to-t from-stone/05 to-blueGray/10"
+          bg="sm:bluegray/10 transparent"
           font="sans"
         >
           <h2
@@ -81,7 +77,7 @@
           </div>
         </div>
 
-        <div class="my-6 sm:hidden"></div>
+        <!-- <div class="my-6 sm:hidden"></div> -->
       </div>
     </ContentList>
 

@@ -14,17 +14,17 @@
     </p>
   </div>
 
-  <main class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-3 gap-8 2xl:w-1/2 w-11/12 mx-auto mb-24">
+  <main class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-3 2xl:w-1/2 w-full gap-8 mx-auto mb-24">
     <!-- 
       Generates a card for each article contained in the 'blog' subfolder 
       (./content/blog) and displays front-matter data (title, date...) 
     -->
     <ContentList path="/resources" v-slot="{ list }">
-      <div v-for="article in list" :key="article._path" class="">
+      <div v-for="article in list" :key="article._path">
         <div 
-          class="p-4 rounded-lg backdrop-blur-2xl"
+          class="p-4 backdrop-blur-2xl"
           flex="~ col"
-          bg-gradient="to-t from-stone/05 to-blueGray/10"
+          bg="sm:bluegray/10 transparent"
           font="sans"
         >
           <h2
@@ -59,11 +59,11 @@
             v-if="article.img" 
             :src="article.img" 
             alt="" 
-            class="rounded-lg my-4 w-full h-36 object-cover"
+            class="rounded-lg my-6 w-full h-36 object-cover"
           >
           
           <div
-            class="hover:text-white mt-4 w-fit" 
+            class="hover:text-white w-fit mt-4" 
             flex="~ self-end items-center"
           >
             <NuxtLink 
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div class="my-6 sm:hidden"></div>
+        <!-- <div class="my-6 sm:hidden"></div> -->
       </div>
     </ContentList>
 

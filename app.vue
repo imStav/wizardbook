@@ -1,52 +1,41 @@
 <template>
-  <nav class="sticky top-0 w-full py-4 backdrop-blur-2xl z-50">
-    <div 
-      class="w-fit mx-auto"
-      flex="~"
-    >
-      <div 
-        class="hover:text-white" 
-        flex="~ row items-center"
-      >
+  <nav class="sticky top-0 w-full py-3 backdrop-blur-2xl z-50">
+    <div class="flex justify-between items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto">
+      <div>
         <NuxtLink 
           to="/" 
-          class="text-xl text-blueGray hover:text-white"
-          font="sans"
+          class="text-3xl text-blueGray hover:text-white"
+          font="display bold"
           decoration="none"
         >
-          Accueil
+          W<span class="text-xl">izarBook.</span>
         </NuxtLink>
-        <div class="i-lucide-home ml-1 text-lg"></div>
-      </div>
-      
-      <div 
-        class="hover:text-white mx-6" 
-        flex="~ row items-center"
-      >
-        <NuxtLink 
-          to="/blog" 
-          class="text-xl text-blueGray hover:text-white"
-          font="sans"
-          decoration="none"
-        >
-          Grimoire
-        </NuxtLink>
-        <div class="i-lucide-book-marked ml-1 text-lg"></div>
       </div>
 
-      <div 
-        class="hover:text-white" 
-        flex="~ row items-center"
-      >
-        <NuxtLink 
-          to="/resources" 
-          class="text-xl text-blueGray hover:text-white"
-          font="sans"
+      <div class="flex items-center">
+        <div class="flex items-center mr-4 hover:text-white">
+          <NuxtLink 
+          to="/blog" 
+          class="text-xl text-blueGray hover:text-white mr-1"
+          font="display semibold"
           decoration="none"
-        >
-          Runes
-        </NuxtLink>
-        <div class="i-lucide-key ml-1 text-lg"></div>
+          >
+            Grimoire
+          </NuxtLink>
+          <div class="i-lucide-book-marked"></div>
+        </div>
+        
+        <div class="flex items-center hover:text-white">
+          <NuxtLink 
+          to="/resources" 
+          class="text-xl text-blueGray hover:text-white mr-1"
+          font="display semibold"
+          decoration="none"
+          >
+            Runes
+          </NuxtLink>
+          <div class="i-lucide-key"></div>
+        </div>
       </div>
     </div>
   </nav>
