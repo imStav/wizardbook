@@ -22,7 +22,7 @@
     <ContentList path="/blog" v-slot="{ list }">
       <div v-for="article in list" :key="article._path">
         <div 
-          class="p-4 backdrop-blur-2xl"
+          class="p-4 sm:backdrop-blur-2xl card-border duration-150"
           flex="~ col"
           bg="sm:bluegray/10 transparent"
           font="sans"

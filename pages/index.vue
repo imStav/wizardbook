@@ -43,11 +43,11 @@
     </p>
   </div>
 
-  <div class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-2 gap-8 2xl:w-1/2 w-11/12 mx-auto mb-24">
+  <div class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-2 gap-8 2xl:w-1/2 w-full mx-auto mb-24">
     <div 
-      class="p-4 rounded-lg" 
+      class="p-4" 
       flex="~ col" 
-      bg-gradient="to-t from-orange/20 to-stone/05"
+      bg-gradient="to-l from-orange/20 via-stone/05 to-transparent"
     >
       <h2 
         class="mb-3"
@@ -76,12 +76,12 @@
       </div>
     </div>
 
-    <div class="my-6 sm:hidden"></div>
+    <!-- <div class="my-6 sm:hidden"></div> -->
 
     <div 
-      class="p-4 rounded-lg" 
+      class="p-4" 
       flex="~ col"
-      bg-gradient="to-t from-indigo/20 to-fuchsia/05"
+      bg-gradient="to-r from-indigo/20 via-fuchsia/05 to-transparent"
     >
       <h2 
         class="mb-3"
