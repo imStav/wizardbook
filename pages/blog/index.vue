@@ -63,7 +63,7 @@
           >
           
           <div
-            class="hover:text-white w-fit" 
+            class="w-fit hover:text-white" 
             flex="~ self-end items-center"
           >
             <NuxtLink 
