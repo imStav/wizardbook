@@ -1,53 +1,68 @@
 <template>
-  <div class="2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
-    <h1
+  <div class="grid sm:grid-cols-2 place-content-center place-items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
+    <div>
+      <h1
       text="5xl white"
       font="bold display"
-    >
-      Wizard Book
-    </h1>
-    <p 
-      text="blueGray"
-      font="sans"
-    >
-      Le Grimoire du mage développeur
-    </p>
+      >
+        Wizard Book
+      </h1>
+      <p 
+        text="blueGray"
+        font="sans"
+      >
+        Le Grimoire du mage développeur
+      </p>
 
-    <div 
+      <div 
       class="mt-8"
       text="blueGray"
       font="sans"
-    >
-      <p>
-        Cet ouvrage s'adresse aux débutants, aux initité(e)s, à celles et ceux souhaitant acquérir et / ou approfondir des connaisances dans le développement web, plus particulièrement dans le <strong>front-end</strong>. Découvrez les bases du <strong>HTML5</strong>, du <strong>CSS3</strong>, du <strong>JavaScript</strong> et bien d'autres choses encore...
-      </p>
+      >
+        <p>
+          Découvrez les bases du développement <strong>front-end</strong> en passant par le <strong>HTML5</strong>, le <strong>CSS3</strong>, le <strong>JavaScript</strong> et bien d'autres choses encore...
+        </p>
 
-      <p class="my-4">
-        Le but de cette ressource est de vous faire gagner un temps considérable dans vos travaux de recherches, dans votre quête ; le chemin pouvant parfois être tortureux.
-      </p>
+        <!-- <p class="my-4">
+          Le but de cette ressource est de vous faire gagner un temps considérable dans vos travaux de recherches, dans votre quête ; le chemin pouvant parfois être tortureux.
+        </p> -->
+      </div>
+    </div>
+
+    <!-- <div class="hidden sm:block h-48 w-48 rounded-full bg-blueGray blur-3xl"></div> -->
+  </div>
+
+  <div class="grid gap-4 sm:flex items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
+    <div class="text-black px-4 py-2 rounded-full w-fit" bg="white">
+      <NuxtLink 
+        to="/blog"
+        class="text-black"
+        font="sans semibold"
+        decoration="none"
+      >
+        Lire le Grimoire
+      </NuxtLink>
+      <!-- <div class="i-lucide-arrow-right ml-2"></div> -->
+    </div>
+
+    <div class="flex items-center ml-2 hover:text-white">
+      <NuxtLink 
+        to="/blog"
+        class="text-blueGray hover:text-white"
+        font="sans semibold"
+        decoration="none"
+      >
+        Voir les Runes
+      </NuxtLink>
+      <div class="i-lucide-arrow-right ml-2"></div>
     </div>
   </div>
 
-  <div class="2xl:w-1/2 w-11/12 md:w-2/3 mx-auto mb-8">
-    <h2
-      text="3xl white"
-      font="display semibold"
-    >
-      Centre de ressources
-    </h2>
-    <p 
-      text="blueGray"
-      font="sans"
-    >
-      Augmentez votre puissance
-    </p>
-  </div>
-
-  <div class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-2 gap-8 2xl:w-1/2 w-11/12 mx-auto mb-24">
+  <!-- <div class="grid sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-2 gap-8 2xl:w-1/2 w-11/12 mx-auto my-24">
     <div 
-      class="p-4 rounded-lg" 
+      class="p-4 card-border" 
       flex="~ col" 
-      bg-gradient="to-t from-orange/20 to-stone/05"
+      bg="orange/15"
     >
       <h2 
         class="mb-3"
@@ -76,12 +91,10 @@
       </div>
     </div>
 
-    <div class="my-6 sm:hidden"></div>
-
     <div 
-      class="p-4 rounded-lg" 
+      class="p-4 card-border" 
       flex="~ col"
-      bg-gradient="to-t from-indigo/20 to-fuchsia/05"
+      bg="indigo/15"
     >
       <h2 
         class="mb-3"
@@ -109,9 +122,11 @@
         <div class="i-lucide-arrow-right ml-2"></div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="fixed top-0 rotate-45 h-24 w-[500px] bg-gradient-to-l from-fuchsia-900/50 via-sky-600/50 to-indigo-500/50 -z-10 blur-3xl"></div>
+  <!-- <div class="fixed top-0 rotate-45 h-24 w-[500px] bg-gradient-to-l from-fuchsia-900/50 via-sky-600/50 to-indigo-500/50 -z-10 blur-3xl"></div> -->
+
+  <div class="fixed -mb-48 bottom-0 h-[500px] w-[2000px] bg-gradient-to-t from-fuchsia-900 via-sky-600/50 to-transparent -z-10 blur-3xl"></div>
 
   <NuxtPage />
 </template>

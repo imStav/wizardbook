@@ -53,4 +53,15 @@ body {
   background-color: black;
   color: #bed5e9;
 }
+
+/* Global card styles & effects */
+@media screen and (min-width: 640px) {
+  .card-border {
+    border: solid 1px #80808017;
+
+    &:hover {
+      border: solid 1px #80808056;
+    }
+  }
+}
 </style>
