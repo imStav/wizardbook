@@ -49,7 +49,7 @@
           </div>
 
           <div class="my-4">
-            <p v-if="article.author">🧙 {{ article.author }}</p>
+            <p v-if="article.author">Source : {{ article.author }}</p>
             <p v-if="article.date" class="opacity-50">Publié le {{ article.date }}</p>
           </div>
           
@@ -73,7 +73,7 @@
             >
               Lire la suite
             </NuxtLink>
-            <div class="i-lucide-arrow-right ml-2"></div>
+            <div class="i-lucide-external-link ml-2"></div>
           </div>
         </div>
 
