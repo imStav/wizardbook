@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }] }
+</script>
+
 <template>
   <div class="grid sm:grid-cols-2 place-content-center place-items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
     <div>
@@ -33,7 +38,10 @@
   </div>
 
   <div class="grid gap-4 sm:flex items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
-    <div class="text-black px-4 py-2 rounded-full w-fit" bg="white">
+    <div 
+      class="text-black px-4 py-2 rounded-full w-fit duration-150" 
+      bg="white hover:blueGray"
+    >
       <NuxtLink 
         to="/blog"
         class="text-black"
@@ -47,7 +55,7 @@
 
     <div class="flex items-center ml-2 hover:text-white">
       <NuxtLink 
-        to="/blog"
+        to="/resources"
         class="text-blueGray hover:text-white"
         font="sans semibold"
         decoration="none"
@@ -58,73 +66,83 @@
     </div>
   </div>
 
-  <!-- <div class="grid sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-2 gap-8 2xl:w-1/2 w-11/12 mx-auto my-24">
-    <div 
-      class="p-4 card-border" 
-      flex="~ col" 
-      bg="orange/15"
+  <div class="2xl:w-1/2 w-11/12 md:w-2/3 mx-auto mt-24 mb-12">
+    <h2
+      text="3xl white"
+      font="semibold display"
     >
-      <h2 
-        class="mb-3"
-        text="3xl white"
-        font="semibold display"
-      >
-        Le Grimoire
-      </h2>
-      <p text="blueGray" font="sans">
-        Un recueil de notes et de savoirs visant à transmettre les connaissances de base pour maîtriser certains aspects du développement web
-      </p>
-
-      <div 
-        class="hover:text-white mt-4 w-fit" 
-        flex="~ self-end items-center"
-      >
-        <NuxtLink 
-          to="/blog" 
-          class="text-blueGray hover:text-white"
-          font="sans"
-          decoration="none"
-        >
-          Accéder au Grimoire
-        </NuxtLink>
-        <div class="i-lucide-arrow-right ml-2"></div>
-      </div>
-    </div>
-
-    <div 
-      class="p-4 card-border" 
-      flex="~ col"
-      bg="indigo/15"
+      Les derniers articles
+    </h2>
+    <p 
+      text="blueGray"
+      font="sans"
     >
-      <h2 
-        class="mb-3"
-        text="3xl white"
-        font="semibold display"
-      >
-        Les Runes
-      </h2>
-      <p text="blueGray" font="sans">
-        Une collection de Runes, chacune renfermant une ou plusieurs informations sur divers sujets. Un savoir à sauvegarder absolument
-      </p>
+      Un Grimoire encore d'actualité
+    </p>
+  </div>
 
-      <div 
-        class="hover:text-white mt-4 w-fit" 
-        flex="~ self-end items-center"
-      >
-        <NuxtLink 
-          to="/resources" 
-          class="text-blueGray hover:text-white"
+  <div class="sm:grid md:grid-cols-2 md:w-2/3 2xl:grid-cols-3 2xl:w-1/2 w-full gap-8 mx-auto mb-24">
+    <ContentList :query="query" v-slot="{ list }">
+      <div v-for="article in list" :key="article._path">
+        <div 
+          class="p-4 sm:backdrop-blur-2xl card-border duration-150"
+          flex="~ col"
+          bg="sm:bluegray/10 transparent"
           font="sans"
-          decoration="none"
         >
-          Accéder aux Runes
-        </NuxtLink>
-        <div class="i-lucide-arrow-right ml-2"></div>
-      </div>
-    </div>
-  </div> -->
+          <h2
+            text="2xl white"
+            font="display semibold"
+          >
+            {{ article.title }}
+          </h2>
+        
+          <div 
+            class="mt-1"
+            flex="~"
+          >
+            <p 
+              v-for="tag in article.tags" 
+              class="mr-2 px-2 rounded-full"
+              text="sm"
+              bg="blueGray/25"
+            >
+              #{{ tag }}
+            </p>
+          </div>
 
-  <!-- <div class="fixed top-0 rotate-45 h-24 w-[500px] bg-gradient-to-l from-fuchsia-900/50 via-sky-600/50 to-indigo-500/50 -z-10 blur-3xl"></div> -->
+          <div class="my-4">
+            <p v-if="article.author">🧙 {{ article.author }}</p>
+            <p v-if="article.date" class="opacity-50">Publié le {{ article.date }}</p>
+          </div>
+        
+          <p class="">{{ article.description }}</p>
+
+          <img 
+            v-if="article.img" 
+            :src="article.img" 
+            alt="" 
+            class="rounded-lg my-6 w-full h-36 object-cover"
+          >
+        
+          <div
+            class="w-fit hover:text-white" 
+            flex="~ self-end items-center"
+          >
+            <NuxtLink 
+              :to="article._path"
+              class="text-blueGray hover:text-white"
+              decoration="none"
+            >
+              Lire la suite
+            </NuxtLink>
+            <div class="i-lucide-arrow-right ml-2"></div>
+          </div>
+        </div>
+
+      </div>
+    </ContentList>
+  </div>
 
   <div class="fixed -mb-48 bottom-0 h-[500px] w-[2000px] bg-gradient-to-t from-fuchsia-900 via-sky-600/50 to-transparent -z-10 blur-3xl"></div>
 
