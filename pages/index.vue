@@ -27,10 +27,6 @@ const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }
         <p>
           Découvrez les bases du développement <strong>front-end</strong> en passant par le <strong>HTML5</strong>, le <strong>CSS3</strong>, le <strong>JavaScript</strong> et bien d'autres choses encore...
         </p>
-
-        <!-- <p class="my-4">
-          Le but de cette ressource est de vous faire gagner un temps considérable dans vos travaux de recherches, dans votre quête ; le chemin pouvant parfois être tortureux.
-        </p> -->
       </div>
     </div>
 
@@ -126,12 +122,14 @@ const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }
           >
         
           <div
-            class="w-fit hover:text-white" 
+            class="text-white px-4 py-1.5 rounded-full w-fit duration-150 hover:text-black" 
+            bg="transparent hover:blueGray"
             flex="~ self-end items-center"
+            border="solid 1 blueGray/50"
           >
             <NuxtLink 
               :to="article._path"
-              class="text-blueGray hover:text-white"
+              class="text-white hover:text-black"
               decoration="none"
             >
               Lire la suite
