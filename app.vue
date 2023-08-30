@@ -47,6 +47,11 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: currentColor;
 }
 
 body {
@@ -55,13 +60,11 @@ body {
 }
 
 /* Global card styles & effects */
-@media screen and (min-width: 640px) {
-  .card-border {
-    border: solid 1px #80808017;
+.card-border {
+  border: solid 1px #80808017;
 
-    &:hover {
-      border: solid 1px #80808056;
-    }
+  &:hover {
+    border: solid 1px #80808056;
   }
 }
 </style>
