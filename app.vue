@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 w-full py-3 backdrop-blur-2xl z-50">
+  <nav class="sticky top-0 w-full py-3 bg-black/50 backdrop-blur-md z-50">
     <div class="flex justify-between items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto">
       <div>
         <NuxtLink 
