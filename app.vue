@@ -44,6 +44,14 @@
 </template>
 
 <style>
+:root {
+  --accent-color: #ffffff;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
 /* Global styles reset */
 * {
   margin: 0;
