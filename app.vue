@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 w-full py-3 backdrop-blur-2xl z-50">
+  <nav class="sticky top-0 w-full py-3 bg-black/50 backdrop-blur-md z-50">
     <div class="flex justify-between items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto">
       <div>
         <NuxtLink 
@@ -15,10 +15,10 @@
       <div class="flex items-center">
         <div class="flex items-center mr-4 hover:text-white">
           <NuxtLink 
-          to="/blog" 
-          class="text-xl text-blueGray hover:text-white mr-1"
-          font="display semibold"
-          decoration="none"
+            to="/blog" 
+            class="text-xl text-blueGray hover:text-white mr-1"
+            font="display semibold"
+            decoration="none"
           >
             Grimoire
           </NuxtLink>
@@ -27,10 +27,10 @@
         
         <div class="flex items-center hover:text-white">
           <NuxtLink 
-          to="/resources" 
-          class="text-xl text-blueGray hover:text-white mr-1"
-          font="display semibold"
-          decoration="none"
+            to="/resources" 
+            class="text-xl text-blueGray hover:text-white mr-1"
+            font="display semibold"
+            decoration="none"
           >
             Runes
           </NuxtLink>
@@ -44,6 +44,15 @@
 </template>
 
 <style>
+:root {
+  --accent-color: #ffffff;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+/* Global styles reset */
 * {
   margin: 0;
   padding: 0;

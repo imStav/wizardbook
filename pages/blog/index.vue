@@ -25,7 +25,7 @@
           <div 
             class="p-4 backdrop-blur-3xl card-border duration-150 rounded-lg"
             flex="~ col"
-            bg="sm:bluegray/10 transparent"
+            bg="bluegray/10"
             font="sans"
           >
             <h2
