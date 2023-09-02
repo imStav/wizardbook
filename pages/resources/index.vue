@@ -25,15 +25,19 @@
           <div 
             class="p-4 backdrop-blur-3xl card-border duration-150 rounded-lg"
             flex="~ col"
-            bg="sm:bluegray/10 transparent"
+            bg="bluegray/10"
             font="sans"
           >
-            <h2
-              text="2xl white"
-              font="display semibold"
-            >
-              {{ article.title }}
-            </h2>
+            <div class="flex justify-between">
+              <h2
+                class="max-w[calc(100%-2rem)]"
+                text="2xl white"
+                font="display semibold"
+              >
+                {{ article.title }}
+              </h2>
+              <div class="i-lucide-external-link text-xl"></div>
+            </div>
           
             <div 
               class="mt-1"
