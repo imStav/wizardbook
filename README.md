@@ -1,6 +1,6 @@
 # Wizard Book
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/dda1fadf-ba09-4d87-ab27-1935b5143cc9/deploy-status)](https://app.netlify.com/sites/tracking-rickandmorty/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8bcfe90d-642a-47e0-af16-cba04a9fa396/deploy-status)](https://app.netlify.com/sites/wizardbook/deploys)
 
 > **Wizard Book** is a web app that aims to help **novice developers**, providing a set of posts and resources about web /  **frontend** development
 
