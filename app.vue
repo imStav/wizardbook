@@ -15,10 +15,10 @@
       <div class="flex items-center">
         <div class="flex items-center mr-4 hover:text-white">
           <NuxtLink 
-          to="/blog" 
-          class="text-xl text-blueGray hover:text-white mr-1"
-          font="display semibold"
-          decoration="none"
+            to="/blog" 
+            class="text-xl text-blueGray hover:text-white mr-1"
+            font="display semibold"
+            decoration="none"
           >
             Grimoire
           </NuxtLink>
@@ -27,10 +27,10 @@
         
         <div class="flex items-center hover:text-white">
           <NuxtLink 
-          to="/resources" 
-          class="text-xl text-blueGray hover:text-white mr-1"
-          font="display semibold"
-          decoration="none"
+            to="/resources" 
+            class="text-xl text-blueGray hover:text-white mr-1"
+            font="display semibold"
+            decoration="none"
           >
             Runes
           </NuxtLink>
@@ -44,6 +44,7 @@
 </template>
 
 <style>
+/* Global styles reset */
 * {
   margin: 0;
   padding: 0;

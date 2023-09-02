@@ -7,8 +7,8 @@ const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }
   <div class="grid sm:grid-cols-2 place-content-center place-items-center 2xl:w-1/2 w-11/12 md:w-2/3 mx-auto my-8">
     <div>
       <h1
-      text="5xl white"
-      font="bold display"
+        text="5xl white"
+        font="bold display"
       >
         Wizard Book
       </h1>
@@ -20,9 +20,9 @@ const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }
       </p>
 
       <div 
-      class="mt-8"
-      text="blueGray"
-      font="sans"
+        class="mt-8"
+        text="blueGray"
+        font="sans"
       >
         <p>
           Découvrez les bases du développement <strong>front-end</strong> en passant par le <strong>HTML5</strong>, le <strong>CSS3</strong>, le <strong>JavaScript</strong> et bien d'autres choses encore...
@@ -81,7 +81,7 @@ const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }
           <div 
             class="p-4 backdrop-blur-3xl card-border duration-150 rounded-lg"
             flex="~ col"
-            bg="sm:bluegray/10 transparent"
+            bg="bluegray/10"
             font="sans"
           >
             <h2
