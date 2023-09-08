@@ -101,7 +101,7 @@ const query: QueryBuilderParams = { path: '/blog', limit: 3, sort: [{ date: -1 }
                 text="sm"
                 bg="blueGray/25"
               >
-                #{{ tag }}
+                {{ tag }}
               </p>
             </div>
 

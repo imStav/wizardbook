@@ -49,7 +49,7 @@
                 text="sm"
                 bg="blueGray/25"
               >
-                #{{ tag }}
+                {{ tag }}
               </p>
             </div>
 
