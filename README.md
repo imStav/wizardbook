@@ -17,5 +17,6 @@
 
 The app is currently live @ [wizardbook.netlify.app](https://wizardbook.netlify.app/)
 
-> **Warning** <br>
-> The app is curently available in **french** only for the moment. English translation is coming soon!
+> [!WARNING]
+>
+> The app is curently available in **french only** for the moment. English translation is coming soon!
