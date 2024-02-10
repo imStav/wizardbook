@@ -14,6 +14,6 @@
     "@nuxt/devtools": "latest",
     "@types/node": "^18.16.19",
     "@unocss/nuxt": "^0.54.1",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.10.1"
   }
 }
